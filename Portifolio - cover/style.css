@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+    header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgb(74, 74, 72);
+      height: 80px;
+    }
+    .logo{
+      padding: 0px 0px 0 70px;
+      color: rgb(81, 255, 0);
+      text-decoration: none;  
+      font-size: 28px;
+      font-weight: 800;
+      font-family: 'DynaPuff', cursive;
+      animation: flootdown 2.0s ease-in-out;
+    }
+    nav a{
+      padding-right: 25px;
+      font-size: 20px;
+      font-weight: 900;
+      text-decoration: none;
+      /* font-family: 'Times New Roman', Times, serif; */
+    color: #a5a2a2;
+    /* font-family: 'DynaPuff', cursive; */
+    animation: flootTop 2.5s ease-in-out;
+  }
+  nav a:after{
+    content: "";
+    position: absolute;
+    background-color: #09ff00;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+  nav a:hover::after{
+    width: 80%;
+  }
+  nav a:hover{
+    filter: brightness(150%);
+  }
+  nav a:first-child{
+    color: #26ff00;    
+  }
+  @keyframes floot {
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-2.4rem);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+  .hearder img{
+    position: absolute;
+    top: 25%;
+    border-radius:
+    38% 33% 37% 36% / 35% 18% 29% 20%;
+    background-color: #fff;
+    filter: brightness(80%);
+    box-shadow: 10px 5px 5px rgb(69, 255, 2);
+    right: 5%;
+    height: 400px;
+    width: 400px;
+    animation: flootbottom 2.0s ease-in-out,floot 3.5s infinite;
+  }
+  .hearder h1{
+    position: absolute;
+    top: 28%;
+    font-family: 'Sedgwick Ave Display', cursive;
+    left: 7%;
+    font-size: 45px;
+    color: #a5a2a2;
+    animation: flootbottom 2.0s ease-in-out;
+  }
+  .hearder h2{
+    position: absolute;
+    top: 38%;
+    left: 7%;
+    font-size: 35px;
+    color: white;
+    animation: flootTop 2.5s ease-in-out;
+
+  }
+  .hearder {
+    height: 90vh;
+    background-color: #3d3d3d;
+  }
+  .hearder h2 span{
+  color: red;
+   font-family: 'Sedgwick Ave Display', cursive; 
+
+}
+.para p{
+  position: absolute;
+  top: 45%;
+  left: 7%;
+  color: #a5a2a2;
+  padding: 0 700px 0 0 ;
+  animation: flootTop 1.9s ease-in-out
+}
+.button button{
+  position: absolute;
+  font-family: 'DynaPuff', cursive;
+  top: 75%;
+  left: 7%;
+  color: #000000;
+  padding: 10px 20px;
+  background:#09ff00;
+  border: 2px solid #3d3d3d;
+  border-radius: 10px;
+  animation: flootright 2.0s ease-in;
+}
+.button button:hover{
+  color: #ffffff;
+  background-color: #000000; 
+}
+button.btn2{
+  position: absolute;
+  left: 15%;
+  animation: flootright 3.0s ease-in-out;
+}
+
+@keyframes flootTop {
+  0%{
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  50%{
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
+@keyframes flootbottom {
+  0%{
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  50%{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+  
+}
+
+@keyframes flootdown{
+  0%{
+    transform: translateX(-300px);
+  
+  }
+  100%{
+    transform: translatex(0px);
+  }
+}
+
+@keyframes flootright{
+  0%{
+    opacity: 0;
+    transform: translateX(300px);
+  
+  }
+  100%{
+    opacity: 1;
+    transform: translatex(0px);
+  }
+}  
+.custom-shape-divider-bottom-1681572726 {
+  position: absolute;
+  bottom: -10px;
+  left: 0%;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  /* background-color: #09ff00; */
+}
+
+.custom-shape-divider-bottom-1681572726 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 130px;
+}
+
+.custom-shape-divider-bottom-1681572726 .shape-fill {
+  fill: #59ff00;
+}
+.about{
+  height: 69.5vh;
+  background-color: #59ff00;
+}
+.header2 h2{
+  position: absolute;
+  top: 110%;
+  animation: flootTop 2s ease-in-out;
+  left: 40%;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'Sedgwick Ave Display', cursive;
+
+}
+.image img{
+  position: absolute;
+  height: 400px;
+  width: auto;
+  top: 110%;
+  left: 7%;
+  filter: brightness(90%);
+  animation:flootbottom 1.5s ease-in-out
+}
+.image2 img.imagge{
+  position: absolute;
+  height: 200px;
+  width: auto;
+  top: 113%;
+  left:  79%;
+  border-radius: 50%;
+  animation: flootTop 2.5s ease-in-out
+}
+.about p{
+  position: absolute;
+  top: 118%;
+  left: 27%;
+  padding: 0 300px 0 0px;
+  animation: flootTop 1.8s ease-in-out
+}
+
+.custom-shape-divider-bottom-1681574960 {
+  position: absolute;
+  bottom: -510px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 100;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1681574960 svg {
+  position: relative;
+  display: block;
+  width: calc(108% + 1.3px);
+  height: 167px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1681574960 .shape-fill {
+  fill: #9500ff;
+}
+
+@keyframes flootleft{
+  0%{
+    opacity: 0;
+    transform: translateX(-300px);
+  
+  }
+  100%{
+    opacity: 0.5;
+    transform: translateX(0px);
+  }
+}
+.btns button {
+  position: absolute;
+  top: 1010px;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: 'DynaPuff', cursive;
+  background:#3d3d3d;
+  border: 2px solid #3d3d3d;
+  border-radius: 10px;
+  animation: flootleft 2.0s ease-in;
+  font-weight: 800;
+  border: 2px solid #09ff00;
+
+}
+.btns button:hover{
+  color: #000000;
+  background-color: #b300ff;
+} 
+.btns button.logina{
+  position: absolute;
+  left: 57%;
+   animation: flootleft 3.0s ease-in-out; 
+} 
+.btns button.signin{
+  position: absolute;
+  left: 65%;
+   animation: flootleft 2.0s ease-in-out; 
+}
+
+
+
+.body{
+  height: 100vh;
+  width: 100%;
+  background-color: #3d3d3d;
+}
+.login form{
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  display: none;
+  animation: flootTop 2.5s ease-in-out;
+  background-color: #000000;
+  height: 529px;
+  width: 466px;
+  z-index: 100;
+  border-radius: 20px;
+}
+.login{
+display: none;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  animation: flootTop 2.5s ease-in-out;
+  background-color: #000000;
+  height: 540px;
+  width: 480px;
+  overflow: hidden;
+  border-radius: 20px;
+  /* animation: mborder 0.1 infinite */
+}
+.login::before{
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  height: 440px;
+  width: 450px;
+  background: linear-gradient(0deg,transparent,transparent,#00f535,#00f50c,#1df500);
+  z-index: 2;
+  transform-origin: bottom right;
+  animation: animte 6s linear infinite;
+} 
+.login::after{
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  height: 440px;
+  width: 450px;
+  background: linear-gradient(0deg,transparent,transparent,#00ddf5,#0bebff,#06daff);
+  z-index: 2;
+  transform-origin: bottom right;
+  animation: animte 6s linear infinite;
+  animation-delay: -9s; 
+}  
+@keyframes animte {
+0%{
+  transform: rotate(0deg);
+
+}   
+100%{
+  transform: rotate(360deg);
+} 
+}
+.borderline{
+  position: absolute;
+  top: 0;
+  inset: 0;
+}
+.borderline::before{
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  height: 440px;
+  width: 450px;
+  background: linear-gradient(0deg,transparent,transparent,#f50000,#f50000,#f50000);
+  z-index: 2;
+  transform-origin: bottom right;
+  animation: animte 6s linear infinite;
+  animation-delay: -4.5s;   
+} 
+.borderline::after{
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  height: 440px;
+  width: 450px;
+  background: linear-gradient(0deg,transparent,transparent,#b000f5,#bc00f5,#ac00f5);
+  z-index: 2;
+  transform-origin: bottom right;
+  animation: animte 6s linear infinite;
+  animation-delay: -31s;   
+} 
+form h3{
+  position: absolute;
+  top:30px;
+  right: 40%;
+  font-size: 30px;
+  color: #fff;
+}
+form h5.h3{
+  position: absolute;
+  top: 130px;
+  left: 50px;
+  color: #fff;
+}
+form h5.h5{
+  position: absolute;
+  top: 250px;
+  left: 50px;
+  color: #fff;
+}
+form input.input1{
+  position: absolute;
+  top: 170px;
+  left: 50px;
+  position: relative;
+  width: 70%;
+  padding: 20px 10px 10px ;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  color: #000000;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition:all 2.5s;
+  z-index: 10;
+}
+form input.input1:hover{
+  width:80%;
+  height: 70px;
+  background: white;
+  border: 1px solid #000000;
+}
+form input.input2{
+  position: absolute;
+  top: 220px;
+  left: 50px;
+  position: relative;
+  width: 70%;
+  padding: 20px 10px 10px ;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  color: #000000;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 2.5s;
+  z-index: 10;
+}
+form input.input2:hover{
+  width:80%;
+  height: 70px;
+  background: white;
+  border: 1px solid #000000;
+}
+form p{
+    position: relative;
+    top: 230px;
+    left: 50px;
+    color: white;
+  }
+  
+button.sign{
+  position: absolute;
+  top: 360px;
+  left: 60%;
+  padding: 10px 30px 10px 30px;
+  border-radius: 9px;
+  color: white;
+  background: #000000;
+  border:2px solid #fff;
+  transition: all 2.5s;
+}
+button.sign:hover{
+ background: linear-gradient(#04f2ff,#0cf500);
+ box-shadow: 5px 5px 40px #00ddf5;
+ color: #000000;
+}
+
+
+
+
+
+.signIn form.form2{
+  position: absolute;
+  top: 6px;
+  animation: flootTop 2.5s ease-in-out;
+  left: 7px;
+  background-color: #000000;
+  height: 500px;
+  width: 780px;
+  z-index: 100;
+  border-radius: 20px;
+}
+.signIn{
+  position: absolute;
+  top: 25%;
+  animation: flootTop 2.5s ease-in-out;
+  left: 20%;
+  background-color: #000000;
+height: 515px;
+  width: 795px; 
+  overflow: hidden;
+  border-radius: 20px;
+}
+.signIn::before{
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  height: 500px;
+  width: 780px;
+  background: linear-gradient(0deg,transparent,transparent,#00f535,#00f50c,#1df500);
+  z-index: 2;
+  transform-origin: bottom right;
+  animation: animted 6s linear infinite;
+} 
+.signIn::after{
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  height: 500px;
+  width: 780px;
+  background: linear-gradient(0deg,transparent,transparent,#00ddf5,#0bebff,#06daff);
+  z-index: 2;
+  transform-origin: bottom right;
+  animation: animted 6s linear infinite;
+  animation-delay: -9s; 
+}  
+@keyframes animted {
+0%{
+  transform: rotate(0deg);
+
+}   
+100%{
+  transform: rotate(360deg);
+} 
+}
+.borderline1{
+  position: absolute;
+  top: 0;
+  inset: 0;
+}
+.borderline1::before{
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  height: 500px;
+  width: 780px;
+  background: linear-gradient(0deg,transparent,transparent,#f50000,#f50000,#f50000);
+  z-index: 2;
+  transform-origin: bottom right;
+  animation: animted 6s linear infinite;
+  animation-delay: -4.5s;   
+} 
+.borderline1::after{
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  height: 500px;
+  width: 780px;
+  background: linear-gradient(0deg,transparent,transparent,#b000f5,#cc00f5,#dd00f5);
+  z-index: 2;
+  transform-origin: bottom right;
+  animation: animted 6s linear infinite;
+  animation-delay: -31s;   
+} 
+form.form2 h3{
+  position: absolute;
+  top:30px;
+  right: 40%;
+  font-size: 30px;
+  color: #fff;
+}
+form.form2 h5.h3{
+  color: #00f50c;
+  margin-top: 10px;
+}
+form.form2 input.input3{
+  position: absolute;
+  top: 170px;
+  left: 50px;
+  position: relative;
+  width: 40%;
+  padding: 20px 10px 10px ;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  color: #000000;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition:all 2.5s;
+  z-index: 10;
+}
+form.form2 input.input3:hover{
+  width:50%;
+  height: 70px;
+  background: white;
+  border: 1px solid #000000;
+}
+form.form2 input.input4{
+  position: absolute;
+  top: 206px;
+  left: 50px;
+  position: relative;
+  width: 40%;
+  padding: 20px 10px 10px ;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  color: #000000;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 2.5s;
+  z-index: 10;
+}
+
+form.form2 input.input4:hover{
+  width:50%;
+  height: 70px;
+  background: white;
+  border: 1px solid #000000;
+}
+form.form2 input.input5{
+  position: absolute;
+  top: 95px;
+  left: 125px;
+  position: relative;
+  width: 40%;
+  padding: 20px 10px 10px ;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  color: #000000;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 2.5s;
+  z-index: 10;
+}
+form.form2 h5.h7{
+  color: rgb(21, 255, 0);
+  position: absolute;
+  top: 135px;
+  left: 440px;
+}
+form.form2 input.input5:hover{
+  width:43%;
+  height: 70px;
+  background: white;
+  border: 1px solid #000000;
+}
+form.form2 input.input6{
+  position: absolute;
+  top: 155px;
+  left: 440px;
+  position: relative;
+  width: 40%;
+  padding: 20px 10px 10px ;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  color: #000000;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 2.5s;
+  z-index: 10;
+}
+form.form2 input.input6:hover{
+  width:43%;
+  height: 70px;
+  background: white;
+  border: 1px solid #000000;
+}
+form.form2 h5.h8{
+  position: absolute;
+ color: rgb(0, 255, 60);
+ top: 51%;
+ left: 450px;
+}
+h4.h4{
+    position: relative;
+    top: 200px;
+    left: 50px;
+    color: rgb(0, 255, 38);
+}
+form.form2 p.p2{
+  top: 169px;
+}
+.button button#btn5{
+  position: absolute;
+  font-family: 'DynaPuff', cursive;
+  top: 75%;
+  left: 74%;
+  z-index: 1000;
+  color: #000000;
+  padding: 10px 20px;
+  background:#09ff00;
+  border: 2px solid #3d3d3d;
+  border-radius: 10px;
+  animation: flootright 2.0s ease-in;
+}
